@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neha's First Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitWeek: Stronger Every Week</title>
+  <link rel="stylesheet" href="fitweek.css" />
 </head>
 <body>
-Hello, world! I am Neha Moorthy. I am learning how to create websites.
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">FW</div>
+      <h1>FitWeek: Stronger Every Week</h1>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Weekly Workouts</a></li>
+        <li><a href="#">Tips &amp; Tricks</a></li>
+        <li><a href="#">Motivation &amp; Progress</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" role="img" aria-label="Motivational workout image">
+    <div class="hero-text">
+      <h2>Start your week strong</h2>
+      <p>Short, effective home workouts—no gym required.</p>
+      <a class="btn" href="#">Start This Week’s Plan</a>
+    </div>
+  </section>
+
+  <main class="layout">
+    <section class="content">
+      <h2>Welcome to FitWeek</h2>
+      <p>Follow our simple, day-by-day routine to build consistency. Each workout is 20–30 minutes, designed for home with minimal equipment.</p>
+
+      <article class="card">
+        <h3>This Week at a Glance</h3>
+        <table class="plan">
+          <thead>
+            <tr>
+              <th>Day</th><th>Focus</th><th>Duration</th><th>Equipment</th><th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Mon</td><td>Full Body</td><td>25 min</td><td>Mat, DBs</td><td><a href="#">View</a></td></tr>
+            <tr><td>Tue</td><td>Lower Body</td><td>20 min</td><td>Bodyweight</td><td><a href="#">View</a></td></tr>
+            <tr><td>Wed</td><td>Core + Mobility</td><td>20 min</td><td>Mat</td><td><a href="#">View</a></td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="card">
+        <h3>Highlights/Motivation</h3>
+        <blockquote>
+            "Motivation is what gets you started. Habit is what keeps you going" — Jim Ryun        
+        </blockquote>
+      </article>
+    </section>
+
+    <aside class="sidebar">
+      <div class="panel">
+        <h4>Navigate</h4>
+        <ul class="nav-mini">
+          <li><a href="#">Weekly Workout Plans</a></li>
+          <li><a href="#">Stretching &amp; Warmups</a></li>
+          <li><a href="#">Progress Tracker</a></li>
+          <li><a href="#">Contact Form</a></li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h4>Social</h4>
+        <div class="video-placeholder" aria-label="Social Media">
+            Social Media
+        </div>
+        <div class="social-actions">
+            <a href="#">YouTube</a>
+            <a href="#">Instagram</a>
+            <a href="#">Share</a>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 FitWeek</small>
+    <a href="#">Contact</a>
+  </footer>
 </body>
 </html>
