@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitWeek | Contact Us</title>
+  <link rel="stylesheet" href="fitweek.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">FW</div>
+      <h1>FitWeek: Stronger Every Week</h1>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weekly.html">Weekly Workouts</a></li>
+        <li><a href="tips.html">Tips &amp; Tricks</a></li>
+        <li><a href="motivation.html">Motivation &amp; Progress</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Contact Us</h2>
+      <p>Questions, feedback, or progress to share? We’d love to hear from you.</p>
+    </div>
+  </section>
+
+  <main class="layout">
+    <!-- MAIN CONTENT -->
+    <section class="content">
+      <h2>Get in Touch</h2>
+      <p>
+        Use the form below to tell us about your fitness goals, ask questions about
+        the weekly workouts, or share your FitWeek progress.
+      </p>
+
+      <article class="card">
+        <h3>Contact Form</h3>
+        <form action="#" method="post">
+          <p>
+            <label for="name">Name</label><br />
+            <input type="text" id="name" name="name" required />
+          </p>
+
+          <p>
+            <label for="email">Email</label><br />
+            <input type="email" id="email" name="email" required />
+          </p>
+
+          <p>
+            <label for="goal">Fitness Goal</label><br />
+            <select id="goal" name="goal">
+              <option value="consistency">Build consistency</option>
+              <option value="strength">Gain strength</option>
+              <option value="weight-loss">Weight loss</option>
+              <option value="energy">Increase energy</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="message">Message / Feedback</label><br />
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" name="newsletter" />
+              I’d like to receive occasional FitWeek updates.
+            </label>
+          </p>
+
+          <p>
+            <button class="btn" type="submit">Send Message</button>
+          </p>
+        </form>
+      </article>
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="panel">
+        <h4>Navigate</h4>
+        <ul class="nav-mini">
+          <li><a href="weekly.html">Weekly Workout Plans</a></li>
+          <li><a href="tips.html">Tips &amp; Tricks</a></li>
+          <li><a href="motivation.html">Motivation &amp; Progress</a></li>
+          <li><a href="index.html">Back to Home</a></li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h4>Social</h4>
+        <div class="video-placeholder" aria-label="Social Media">
+          Social Media
+        </div>
+        <div class="social-actions">
+          <a href="#">YouTube</a>
+          <a href="#">Instagram</a>
+          <a href="#">Share</a>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 FitWeek</small>
+    <a href="mailto:youremail@example.com">Email</a>
+    <a href="contact.html">Contact</a>
+  </footer>
+</body>
+</html>

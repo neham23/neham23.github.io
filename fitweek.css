@@ -71,18 +71,44 @@ body {
 
 .hero {
   background: var(--secondary);
-  padding: 60px 20px;
+  padding: 40px 20px 30px;
   text-align: center;
 }
 
 .hero-text h2 {
-  margin: 0;
+  margin: 0 0 8px;
   font-size: 2rem;
 }
 
+.hero-text p {
+  margin: 0 0 14px;
+}
+
+.hero-image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.hero-main-image,
+.hero-side-image {
+  width: 30%;
+  max-width: 420px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.hero-main-image {
+  width: 40%;
+}
+
+
 .btn {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 8px;
   padding: 10px 18px;
   background: var(--accent);
   color: white;
@@ -99,7 +125,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 320px;
   gap: 25px;
-  padding: 25px 20px;
+  padding: 25px 20px 40px;
   max-width: 1150px;
   margin: 0 auto;
 }
@@ -151,32 +177,57 @@ body {
   text-decoration: underline;
 }
 
-.video-placeholder {
-  height: 150px;
-  background: var(--accent);
-  border-radius: 10px;
-  margin-bottom: 10px;
-  display: flex;             
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #ffffff;
+.social-panel {
+  text-align: center;
 }
 
 .social-actions {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .social-actions a {
-  color: var(--primary);
-  text-decoration: none;
+  background: var(--primary);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 20px;
   font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.2s;
 }
 
 .social-actions a:hover {
-  text-decoration: underline;
+  background: var(--secondary);
+  color: var(--text);
+  transform: translateY(-3px);
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
 }
 
 .site-footer {
@@ -201,5 +252,12 @@ body {
 @media (max-width: 850px) {
   .layout {
     grid-template-columns: 1fr;
+  }
+  .hero-image-row {
+    flex-direction: column;
+  }
+  .hero-main-image,
+  .hero-side-image {
+    width: 90%;
   }
 }
