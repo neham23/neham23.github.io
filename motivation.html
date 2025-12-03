@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FitWeek | Motivation & Progress</title>
+  <meta name="description" content="Stay motivated with FitWeek quotes, a progress checklist, and tools to track your weekly workouts." />
+  <meta name="keywords" content="FitWeek motivation, workout progress, fitness checklist, home workouts" />
   <link rel="stylesheet" href="fitweek.css" />
 </head>
 <body>
-
   <header class="site-header">
     <div class="brand">
       <div class="logo">FW</div>
       <h1>FitWeek: Stronger Every Week</h1>
     </div>
-
     <nav class="site-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -25,26 +25,22 @@
       </ul>
     </nav>
   </header>
-
   <section class="hero">
     <div class="hero-text">
       <h2>Motivation & Progress</h2>
       <p>Stay inspired and track your journey toward a stronger you.</p>
     </div>
   </section>
-
   <main class="layout">
     <section class="content">
-
       <article class="card">
         <h3>Motivational Video</h3>
         <p>Need a boost? Watch this quick message before you start your week.</p>
-        <iframe class="video-frame"
-                src="https://www.youtube.com/embed/VIDEO_ID"
-                title="Motivational workout video"
-                allowfullscreen></iframe>
+        <video controls width="50%" poster="motivation.jpg">
+          <source src="motivation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </article>
-
       <article class="card">
         <h3>Motivational Quotes</h3>
         <blockquote>
@@ -56,7 +52,6 @@
           — Priya S.
         </blockquote>
       </article>
-
       <article class="card">
         <h3>Your Progress Checklist</h3>
         <p>Use this weekly checklist to stay on track:</p>
@@ -70,16 +65,12 @@
           <li>□ Sunday rest & reset</li>
         </ul>
       </article>
-
       <article class="card">
         <h3>Download Your Progress Tracker</h3>
         <p>Keep a printable version to track your weekly workouts.</p>
-        <a class="btn" href="#">Download PDF</a>
+        <a class="btn" href="progress-tracker.pdf" download>Download Progress Tracker</a>
       </article>
-
     </section>
-
-
     <aside class="sidebar">
       <div class="panel">
         <h4>Navigate</h4>
@@ -89,10 +80,8 @@
           <li><a href="contact.html">Contact Form</a></li>
         </ul>
       </div>
-
-      <div class="panel">
-        <h4>Social</h4>
-        <div class="video-placeholder">Social Media</div>
+      <div class="panel social-panel">
+        <h4>Social Media</h4>
         <div class="social-actions">
           <a href="#">YouTube</a>
           <a href="#">Instagram</a>
@@ -101,12 +90,11 @@
       </div>
     </aside>
   </main>
-
   <footer class="site-footer">
     <small>© 2025 FitWeek</small>
-    <a href="mailto:youremail@example.com">Email</a>
+    <span>Email: fitweekcontact@gmail.com</span>
     <a href="contact.html">Contact</a>
+    <a href="https://darebee.com" target="_blank" rel="noopener">External Workout Resource</a>
   </footer>
-
 </body>
 </html>

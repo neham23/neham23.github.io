@@ -105,7 +105,6 @@ body {
   width: 40%;
 }
 
-
 .btn {
   display: inline-block;
   margin-top: 8px;
@@ -237,6 +236,7 @@ textarea {
   display: flex;
   gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .site-footer a {
